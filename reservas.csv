@@ -1,0 +1,8 @@
+reserva_id,destino,cliente,personas,dias,costo_total
+1,Cartagena,Ana Torres,2,5,1500000
+2,Amazonas,Pedro Gómez,4,7,4000000
+3,Cartagena,Luis Pérez,1,3,900000
+4,Medellín,Laura Ruiz,2,4,1300000
+5,Amazonas,Diego Ríos,3,6,3500000
+6,Cartagena,Camila Ortiz,2,5,1600000 
+6,Cali,Juan Ruiz,2,5,1300000

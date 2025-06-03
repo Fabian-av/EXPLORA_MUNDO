@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ExploraMundo - Agencia de Viajes</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1 id="exploramundo">ExploraMundo</h1>
+<nav>
+<ul id="menu">
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#paquetes">Paquetes</a></li>
+<li><a href="#contacto">Contacto</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="canvas.html">Canvas</a></li>
+</ul>
+</nav>
+</header> 
+
+<main>
+<section id="inicio">
+<h1>Bienvenido a tu próxima aventura</h1>
+<p>Descubre los mejores destinos con nosotros.</p>
+</section>
+
+<section id="paquetes">
+<h3>Puedes dar al boton de abajo para cotizar tu viaje </h3>
+    <button id="botoncot">Mostrar/Ocultar Cotizador</button>
+
+<section id="cotizador">
+    <h2 id="calcularCosto">Calcula tu Costo</h2>
+    <label for="destino">Destino:</label>
+    <select id="destino">
+        <option value="Cartagena">Cartagena</option>
+        <option value="Medellín">Medellín</option>
+        <option value="Amazonas">Amazonas</option>
+        <option value="Cali">Cali</option>
+    </select>
+
+    <label for="personas">Número de personas:</label>
+    <input type="number" id="personas" min="1" value="1">
+
+    <label for="dias">Cantidad de días:</label>
+    <input type="number" id="dias" min="1" value="1">
+
+    <button onclick="calcularCosto()">Calcular Costo</button>
+
+    <div id="resultado">
+        
+    </div>
+</section>
+
+
+<h2>Paquetes Destacados</h2>
+<div class="paquetes-contenedor">
+    <div class="paquete">
+        <h3>Cartagena</h3>
+        <img id="cartagena" src="imagenes/cartagena.jpg" alt="Cartagena">
+        <p class="descripcion">Un viaje al corazón del Caribe colombiano. Cartagena de indias...</p>
+        <button onclick="cartagena(this)">Ver más</button>
+    </div>
+    <div class="paquete">
+        <h3>Medellín</h3>
+        <img src="imagenes/medellin.jpg" alt="Medellín">
+        <p class="descripcion">Tecnología y cultura en la ciudad de la eterna primavera.</p>
+        <button onclick="medellin(this)">Ver más</button>
+    </div> 
+    <div class="paquete">
+        <h3>Amazonas</h3>
+        <img src="imagenes/amazonas.jpg" alt="Amazonas">
+        <p class="descripcion">Naturaleza, belleza y costumbres.</p>
+        <button onclick="amazonas(this)">Ver más</button>
+    </div> 
+    <div class="paquete">
+        <h3>Cali</h3>
+        <img id="CALI" src="imagenes/CALI.jpg" alt="cali">
+        <p class="descripcion">Cali es una ciudad colombiana ubicada en el departamento del Valle del Cauca...</p>
+        <button onclick="cali(this)">Ver más</button>
+    </div>
+</div>
+</section>
+
+<section id="contacto">
+<h2>Contáctanos</h2>
+<p>Email: contacto@exploramundo.com</p>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2025 ExploraMundo</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

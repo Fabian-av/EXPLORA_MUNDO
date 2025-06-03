@@ -1,0 +1,95 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e0f7fa; 
+  margin: 0;
+  padding: 0;
+  color: #263238; 
+}
+
+
+header {
+  background-color: #01579b; 
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+
+#menu {
+  margin-top: 10px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: white; 
+  background-color: rgba(76, 175, 67, 0.1); 
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+}
+
+#menu a:hover {
+  background-color: #ff6f00; 
+  color: white;
+}
+
+
+.canvas {
+  background-color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+.block {
+  background-color: white;
+  border: 1px solid #b3e5fc; 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(1, 87, 155, 0.1); 
+  flex: 1;
+  min-width: 200px;
+  transition: transform 0.2s ease;
+}
+
+.block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(1, 87, 155, 0.2);
+}
+
+.block p {
+  margin-top: 10px;
+}
+
+
+.largo {
+  flex: 1;
+}
+
+.corto {
+  flex: 1;
+  min-width: 250px;
+}
+
+.mediano {
+  flex: 1;
+  min-width: 300px;
+}
+
+
